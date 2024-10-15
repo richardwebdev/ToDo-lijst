@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(49, 46, 43);
+}
+
+.container {
+    position: absolute;
+    width: 500px;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding: 20px 20px;
+    background-color: rgb(49, 46, 43);
+    color: white;    
+}
+
+.container .ToDoList {
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container .ToDoListElement {
+    display: inline;
+    padding-right: 20px;
+}
+
+.container input {
+    margin: 10px;
+}
+
+.container button {
+    border-radius: 5px;
+    border: solid;
+}
+
+.container button:hover {
+    cursor: pointer;
+}

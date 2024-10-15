@@ -9,16 +9,19 @@ function renderItems() {
 
     for (const [index, item] of Object.entries(items)) {
         const container = document.createElement("div")
-        container.style.marginBottom = "10px"
+        container.classList.add('ToDoList')
+        //container.style.marginBottom = "10px"
         
         const text = document.createElement("p")
-        text.style.display = "inline"
-        text.style.marginRight = "10px"
-        text.textContent = item;
+        text.classList.add('ToDoListElement')
+        //text.style.display = "inline"
+        //text.style.marginRight = "10px"
+        text.textContent = `${Number(index) + 1}. ${item}`
 
         const removebutton = document.createElement("button")
+        //removebutton.classList.add('removebutton')
         removebutton.textContent = "delete"
-        removebutton.style.borderRadius = "30px"
+        //removebutton.style.borderRadius = "30px"
         removebutton.onclick = () => removeItems(index)
 
         container.appendChild(text)
